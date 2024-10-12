@@ -2,4 +2,5 @@
     <string name="app_name">lab1</string>
     <string name="open_activityb">Open ActivityB</string>
     <string name="open_fragmentb">Open FragmentB</string>
+    <string name="open_activityc">Open ActivityC</string>
 </resources>
