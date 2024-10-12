@@ -11,17 +11,15 @@ import androidx.appcompat.app.AppCompatActivity
 class ActivityA : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("lab", "A created")
         enableEdgeToEdge()
         setContentView(R.layout.activity_a)
     }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("lab", "activity A paused")
-
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        Log.d("lab", "A on new Intent")
     }
     fun activityButtonCallback(view: View) {
-        Log.d("lab", "activity button clicked")
         val intent = Intent(this, ActivityB::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
