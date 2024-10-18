@@ -4,4 +4,6 @@
     <string name="open_fragmentb">Open FragmentB</string>
     <string name="open_activityc">Open ActivityC</string>
     <string name="open_activitya">Open ActivityA</string>
+    <string name="send_color">SendColor</string>
+    <string name="open_fragmentbb">Open FragmentBB</string>
 </resources>
